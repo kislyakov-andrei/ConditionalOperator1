@@ -109,5 +109,16 @@ public class Main {
             System.out.println("Вагон полностью забит");}
         // Task 7
         System.out.println("Task 7");
+        int one=5;
+        int two=12;
+        int three=4;
+        if (one>two && one>three) {
+            System.out.println(one);}
+        else if (two>three) {
+            System.out.println(two);}
+        else {
+            System.out.println(three);}
+
+
     }
 }
