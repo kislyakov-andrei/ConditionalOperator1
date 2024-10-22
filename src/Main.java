@@ -65,15 +65,49 @@ public class Main {
             System.out.println("Если возраст человека равен "+age6+", то ему пора ходить на работу.");}
         // Task 5
         System.out.println("Task 5");
-        int age2=
-        if (age2<5) {
-            System.out.println("Если возраст ребенка равен "+age2+", то ему нельзя кататься на атракционе.");}
+        if (age3<5) {
+            System.out.println("Если возраст ребенка равен "+age3+", то ему нельзя кататься на атракционе.");}
         if (age4>=5 && age4<14) {
             System.out.println("Если возраст ребенка равен " + age4 + ", то ему можно кататься на атракционе в сопровождении взрослого.");
         }
-        else {
-            System.out.println("Если возраст ребенка равен "+age5+", то ему можно кататься на атракционе без сопровождения взрослого");
+        if (age2>=14) {
+        System.out.println("Если возраст ребенка равен "+age2+", то ему можно кататься на атракционе без сопровождения взрослого");
         }
-
+        //Task 6
+        System.out.println("Task 6");
+        int sittingPlace=60;
+        int capacityOfCarriage=102;
+        int standingPlace;
+        standingPlace=capacityOfCarriage-sittingPlace;
+        int numberOfPassengers1=15;
+        if (numberOfPassengers1<=60) {
+        System.out.println("В вагоне "+(standingPlace-numberOfPassengers1)+"сидячих мест, и "+standingPlace+" стоячих мест.");}
+          else   if (numberOfPassengers1>60 && numberOfPassengers1<=capacityOfCarriage)
+        {
+            System.out.println("В вагоне "+(capacityOfCarriage-numberOfPassengers1)+" стоячих мест.");}
+            else {
+                System.out.println("Вагон полностью забит");}
+            // variant 2
+        System.out.println("Variant 2");
+        int numberOfPassengers2=65;
+        if (numberOfPassengers2<=60) {
+            System.out.println("В вагоне "+(standingPlace-numberOfPassengers2)+"сидячих мест, и "+standingPlace+" стоячих мест.");}
+        else   if (numberOfPassengers2>60 && numberOfPassengers2<=capacityOfCarriage)
+        {
+            System.out.println("В вагоне "+(capacityOfCarriage-numberOfPassengers2)+" стоячих мест.");}
+        else {
+            System.out.println("Вагон полностью забит");}
+        // Variant 3
+        System.out.println("Variant 3");
+        int numberOfPassengers3=105;
+        if (numberOfPassengers3<=60) {
+            System.out.println("В вагоне "+(standingPlace-numberOfPassengers3)+"сидячих мест, и "+standingPlace+" стоячих мест.");}
+        else   if (numberOfPassengers3>60 && numberOfPassengers3<=capacityOfCarriage)
+        {
+            System.out.println("В вагоне "+(capacityOfCarriage-numberOfPassengers3)+" стоячих мест.");}
+        else {
+            System.out.println("Вагон полностью забит");}
+        // Task 7
+        System.out.println("Task 7");
     }
 }
